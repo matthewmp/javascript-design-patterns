@@ -1,5 +1,11 @@
 /*
     Below is another implementation of the Singleton pattern.
+    
+    This example allows the importing of the class.
+
+    This will allow an instance to be made across all
+    modules (files) in a project using the "new" keyword 
+    but they will all be the same instance across the application
 */
 
 export default class LoggerUtility2 { 
