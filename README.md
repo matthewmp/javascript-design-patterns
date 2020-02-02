@@ -2,6 +2,6 @@
 
 #### `npm install`
 
-#### run in browser `npm run start`
+#### `npm run start` run in browser
 
-#### create build `npm run build`
+#### `npm run build` create build
