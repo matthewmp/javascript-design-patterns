@@ -1,7 +1,7 @@
 // import all Singleton classes/instances
-import LoggerUtility_NotSingleton from '../Singleton/InitialClass_NotSingleton';
-import singleton1 from '../Singleton/Singleton';
-import singleton2 from '../Singleton/Singleton2';
+import LoggerUtility_NotSingleton from '../Creational_Design_Patterns/Singleton/InitialClass_NotSingleton';
+import singleton1 from '../Creational_Design_Patterns/Singleton/Singleton';
+import singleton2 from '../Creational_Design_Patterns/Singleton/Singleton2';
 
 test('not_singleton should create unique instances', () => {
     const notSingleton1 = new LoggerUtility_NotSingleton();
