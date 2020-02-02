@@ -5,3 +5,5 @@
 #### `npm run start` run in browser
 
 #### `npm run build` create build
+
+### `npm run test` run tests
