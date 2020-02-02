@@ -6,4 +6,4 @@
 
 #### `npm run build` create build
 
-### `npm run test` run tests
+#### `npm run test` run tests
