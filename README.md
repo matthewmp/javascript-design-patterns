@@ -2,7 +2,7 @@
 
 #### `npm install`
 
-#### `npm run start` run in browser
+#### `npm run start` run in browser (all classes / examples available in console)
 
 #### `npm run build` create build
 
