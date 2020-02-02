@@ -1,0 +1,24 @@
+{
+  "name": "javascript-design-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "build": "parcel build ./index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewmp/javascript-design-patterns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewmp/javascript-design-patterns/issues"
+  },
+  "homepage": "https://github.com/matthewmp/javascript-design-patterns#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
