@@ -1,0 +1,24 @@
+**************************************
+*****  OBSERVER DESIGN PATTERN  *****
+**************************************
+
+DESCRIPTION:
+    
+    The observer pattern is a "Behavioral" Design Pattern.  It's purpose is to alert other 
+    components when a single components state is changed.
+
+PROS:
+
+    - It supports the principle of loose coupling between objects that interact with each other
+    - It allows sending data to other objects effectively without any change in the Subject or 
+      Observer classes
+    - Observers can be added/removed at any point in time
+
+CONS:
+
+    - Due to the dynamic relationship between subscribers and publishers, the update 
+      dependency can be difficult to track.
+
+USE CASES:
+    - Social media notifications to "friends" when status is updated
+    - In programming this is similar to an event listener

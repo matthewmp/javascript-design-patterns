@@ -1,34 +1,45 @@
-The Singelton Pattern is a "Creational Design Pattern".
-It's purpose is to ensure that only a single instance of a class
-can be instantiated.  
+**************************************
+*****  SINGLETON DESIGN PATTERN  *****
+**************************************
 
-This is useful when you have a single object that is shared among
-different resources in your application without having to recreate
-that object.  The singleton instance should be globally available to 
-all parts of your application.
+DESCRIPTION:
 
-Some difficulties with this pattern is that since other parts of your
-application depend on it, it can be difficult to change the singelton
-without causing problems elsewhere in the app.  It can also cause race
-conditions and is a bit controversial for a design pattern. These race conditions 
-seem to only apply to multi-threaded programming languages and may not
-be valid in JavaScript.
+    The Singelton Pattern is a "Creational Design Pattern".
+    It's purpose is to ensure that only a single instance of a class
+    can be instantiated.  
 
-Some practical use cases for the Singleton are:
+    This is useful when you have a single object that is shared among
+    different resources in your application without having to recreate
+    that object.  The singleton instance should be globally available to 
+    all parts of your application.
 
-- Printer spools where multiple parts of an app or multiple users
-  access the same spooler.  Having multiple instances of a spooler 
-  class would not be ideal so this pattern would make sense.
+PROS:
 
-- Database connections.  If you are connecting to a database from your
-  app you would only want a single instance of this connection.  Having
-  multiple connections uses up resources on the server and if many users
-  are trying to connect to a database while all having multiple instances
-  on each of the users front end code it can cause blocking and unnecessary 
-  trafic.  It could cause a conflict and create unpredictable
-  behaviour and potential loss of data.
-  
-- Logging
+    - Easy to implement
+    - Singleton prevents other objects from instantiating their own copies of the Singleton 
+      object, ensuring that all objects access the single instance.
+    - Flexibility to change the instantiation process.
 
-- Any other shared resource
+CONS:
+
+    - It can be difficult to change the singelton without causing problems elsewhere due to dependance.  
+    - It can also cause race conditions in multi-threaded programming languages
+
+USE CASES:
+
+    - Printer spools where multiple parts of an app or multiple users
+    access the same spooler.  Having multiple instances of a spooler 
+    class would not be ideal so this pattern would make sense.
+
+    - Database connections.  If you are connecting to a database from your
+    app you would only want a single instance of this connection.  Having
+    multiple connections uses up resources on the server and if many users
+    are trying to connect to a database while all having multiple instances
+    on each of the users front end code it can cause blocking and unnecessary 
+    trafic.  It could cause a conflict and create unpredictable
+    behaviour and potential loss of data.
+    
+    - Logging
+
+    - Any other shared resource
 
