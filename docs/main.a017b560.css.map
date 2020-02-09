@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,SACI,SAAU,CACV,UAAW,CACX,eAAgB,CAChB,gBACJ","file":"main.a017b560.css","sourceRoot":"..","sourcesContent":[".divider{\n    width: 60%;\n    height: 1px;\n    background: #333;\n    margin: 50px auto;\n}"]}
