@@ -18,3 +18,4 @@ window.LoggerUtility_NotSingleton = LoggerUtility_NotSingleton;
 // Observer Classes
 window.Subject = Observer.Subject;
 window.ObserverList = Observer.ObserverList;
+

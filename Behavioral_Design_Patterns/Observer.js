@@ -142,3 +142,4 @@ const scoreBoard = new ScoreBoard(divScoreBoard);
 scoreBoard.addObserver(observer1)
 scoreBoard.addObserver(observer2)
 scoreBoard.addObserver(observer3)
+console.log('test')
