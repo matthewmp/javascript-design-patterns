@@ -1,0 +1,36 @@
+.adapter-container {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digital-speed {
+    min-width: 80px;
+    min-height: 80px;
+    text-align: center;
+    border: 1px solid #eee;
+    line-height: 80px;
+    font-size: 1.2em;
+    font-family: arial;
+}
+
+span#mph {
+    margin: 10px;
+}
+
+span#kph {
+    margin: 10px;
+}
+
+.accelerate-button-wrapper {
+    padding: 20px;
+}
+
+button#btnAccelerate {
+    min-height: 50px;
+    background: #ff00ff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}

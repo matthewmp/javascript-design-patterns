@@ -105,6 +105,7 @@
     <br>
     <br>
     <div class="divider"></div>
+
         <center><h3>Observer Pattern Example</h3></center>
         <div id="oberservers-wrapper">
             <div class="observer-container">
@@ -127,7 +128,78 @@
         </div>
         <div class="divider"></div>
         
+<!-- ============================================= -->
+<h1>Structural Patterns</h1>
+    <br>
+    <br>
+    <h2>Adapter Pattern</h2>
+    <p>DESCRIPTION:</p>
+    
+    The adapter pattern is a "Structural" Design Pattern.  It's purpose is to alert other 
+    components when a single components state is changed.
+
+    <p> PROS:</p>
+        <ul>
+            <li> Single Responsibility Principle. You can separate the interface or data conversion code from the primary business logic of the program.</li>
+            <li> Open/Closed Principle. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface.</li>
+        </ul>
+        
+
+    <p> CONS:</p>
+        <ul>
+            <li>The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.</li>
+        </ul>
+        
+
+    <p>USE CASES:</p>
+        <ul>
+            <li> When you want to use some existing class, but its interface isn’t compatible with the rest of your code</li>
+            <li> When you want to reuse several existing subclasses that lack some common functionality that can’t be added to the superclass</li>
+        </ul>
+        
+    <br>
+    <br>
+    <br>
+    <div class="divider"></div>
+    
+        <center><h3>Adapter Pattern Example</h3></center>
+
+        <p>
+            A spedometer class was initially made to accelerate/decelerate and display speed in MPH.  Now the company wants to add the
+            ability to show the speed in KPH for their European clients.  Instead of altering the initial class we will build an adapter 
+            to accomodate this feature while leaving the original class alone.  Once instantiated we will be able to get both speeds
+            as we want to.
+        </p>
+
+        <p>
+            <strong>
+                Press and hold the "Accelerater" button and watch how the MPH is displayed and converted into KPH.
+            </strong>
+        </p>
+
+        <p>
+            This was achieved by not editing the original MPH_Spedometer class but by creating an adapter for it with the KPH_Adapter class.
+        </p>
+
+        <div class="adapter-example-wrapper">
+            <div class="adapter-container">
+                <div class="digital-speed">
+                    <span id="mph">0</span>mph
+                </div>
+
+                <div class="accelerate-button-wrapper">
+                    <button id="btnAccelerate">Accelerate</button>
+                </div>
+
+                <div class="digital-speed">
+                    <span id="kph">0</span>kph
+                </div>
+            </div>
+        </div>
 
         <script src="index.js"></script>
 </body>
 </html>
+
+ 
+ 
